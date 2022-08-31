@@ -112,27 +112,40 @@ button:hover{
                               "suvs"
                               "luxury";
         grid-template-columns: 260px;
-        grid-template-rows: 400px 400px 400px;
+        /* grid-template-rows: 400px 400px 400px; */
         row-gap: 10px;
+        justify-items: center;
         justify-content: center;
         align-content: center;
-        height: auto;
-        margin: 10px 0;
+        /* max-width: 393px;
+        max-height: 873px; */
+        width: 80%;
+        height: 80%;
+        margin: 10px auto;
     }
     
     .sedans{
         grid-area: sedans;
         border-radius: 10px;
+        max-width: 95%;
+        height: auto;
+       
     }
     
     .suvs{
         grid-area: suvs;
         border-radius: 10px;
+        max-width: 95%;
+        height: auto;
     }
     
     .luxury{
         grid-area: luxury;
         border-radius: 10px;
+        max-width: 95%;
+        height: auto;
     }
-
+    .sedans .cards-grid{
+      
+    }
 }
