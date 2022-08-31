@@ -103,4 +103,36 @@ button:hover{
     color: white;
 }
 
+/* responsive design */
 
+@media only screen and (max-width: 480px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas: "sedans" 
+                              "suvs"
+                              "luxury";
+        grid-template-columns: 260px;
+        grid-template-rows: 400px 400px 400px;
+        row-gap: 10px;
+        justify-content: center;
+        align-content: center;
+        height: auto;
+        margin: 10px 0;
+    }
+    
+    .sedans{
+        grid-area: sedans;
+        border-radius: 10px;
+    }
+    
+    .suvs{
+        grid-area: suvs;
+        border-radius: 10px;
+    }
+    
+    .luxury{
+        grid-area: luxury;
+        border-radius: 10px;
+    }
+
+}
